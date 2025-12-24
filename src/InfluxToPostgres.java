@@ -42,7 +42,7 @@ public class InfluxToPostgres {
             conn = DriverManager.getConnection(postgresUrl, postgresUser, postgresPassword);
 
             conn.setAutoCommit(false); // IMPROVEMENT: Transaction start
-            String insertSQL = "INSERT INTO aggregated_data (company, project, cohort, user, stage, java, value) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            String insertSQL = "INSERT INTO aggregated_data (company, project, cohort, \"user\", stage, java, value) VALUES (?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement pstmt = conn.prepareStatement(insertSQL);
 
 

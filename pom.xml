@@ -30,6 +30,7 @@
             <version>42.6.0</version>
         </dependency>
 
+
         <!-- SLF4J for logging (required by InfluxDB client) -->
         <dependency>
             <groupId>org.slf4j</groupId>
